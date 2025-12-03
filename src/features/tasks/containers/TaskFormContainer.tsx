@@ -10,9 +10,10 @@ export default function TaskFormContainer() {
   const [formData, setFormData] = useState<TaskFormData>({
     title: "",
     description: "",
-    priority: "medium", // 初期値として medium を設定
+    priority: "medium",
     dueDate: "",
-  });
+    status: false
+  }); // 新規作成時の初期値を設定
 
   const navigate = useNavigate();
 
